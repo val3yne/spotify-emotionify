@@ -24,8 +24,7 @@ Built with Spotipy and the Spotify Web API, it turns your feelings into music â€
 ### Installation
 
 #### 1. Clone the repository
-git clone https://github.com/yourusername/spotify-emotionify.git
-cd spotify-emotionify
+git clone https://github.com/yourusername/spotify-emotionify.git cd spotify-emotionify
 
 ## Install dependencies:
 
