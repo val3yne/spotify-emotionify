@@ -146,11 +146,14 @@ def main_menu():
                     print(f"📝 Description: {playlist.get('description', 'No description')}")
                     print(f"🎶 Total tracks: {playlist['tracks']['total']}")
                     print("\n🎶 Top 10 songs:")
-                    for i, item in enumerate(playlist['tracks']['items'][:10], 1):
-                        track = item['track']
-                        name = track['name']
-                        artist = track['artists'][0]['name']
-                        print(f"  {i}. {name} - {artist}")
+                 for i, item in enumerate(playlist['tracks']['items'][:10], 1):
+                        track = item.get("track")
+                      if not track:
+                      continue
+                    name = track["name"]
+                    artist = track["artists"][0]["name"]
+                    print(f"  {i}. {name} - {artist}")
+
                 except Exception as e:
                     print("Error accessing playlist:", e)
             else:
@@ -176,3 +179,4 @@ if __name__ == "__main__":
         print("\n\n Goodbye! Take care <3")
     except Exception as e:
         print(f"\n An error occurred: {e}")
+
