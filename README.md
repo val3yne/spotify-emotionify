@@ -6,7 +6,7 @@ Built with Spotipy and the Spotify Web API, it turns your feelings into music �
 
 
 ## Features
-
+ 
 -  **Mood-Based Playlists** — Instant Spotify playlist recommendations based on your emotions  
 -  **Emotion Tracking** — Log and track your moods over time  
 -  **Statistics Dashboard** — Visual breakdown of your emotional patterns  
